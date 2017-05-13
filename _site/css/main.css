@@ -1,0 +1,204 @@
+
+  html{
+    font-size: 16px;
+  }
+
+  body{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .siteWrapper{
+    box-shadow: 1px -5px 5px 6px #f8f8f8;
+    padding: 0;
+  }
+
+
+/*====== header_Haldmann ======*/
+
+
+  .headerLogo{
+    height: 22rem;
+    background-image: url(../medien/header-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5.5rem 0rem;
+  }
+
+  .headerLogo img{
+    display: block;
+    width: 32%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sectionLine{
+    width: 89%;
+    height: 0.15rem;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: #c0c0c0;
+  }
+
+  .navigationSec{
+    width: 100%;
+    height: 4rem;
+    padding-top: 1.2rem;
+    background-color: #028090;
+    border-top: 2px #05668d solid;
+    border-bottom: 2px #05668d solid;
+  }
+
+  .navigationSec ul{
+    padding: 0;
+    display: block;
+    list-style: none;
+    text-align: center;
+  }
+
+  .navigationSec li{
+    color: white;
+    display: inline-block;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .navigationSec li + li:before{
+    content: "/ "
+  }
+
+  .navigationSec a{
+    color: white;
+  }
+
+/*====== header_Haldmann ======*/
+
+
+
+/*====== projectSec_Haldmann ======*/
+
+  .projectSec{
+    width: 100%;
+    height: 30rem;
+    background-color: #ebebeb;
+  }
+
+  .projectBox{
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: 4rem;
+    height: 28rem;
+  }
+
+  .projectSec h4{
+    color: #aaa;
+  }
+
+  .projectSec h5{
+    color: #333;
+    text-align: justify;
+  }
+
+  .imgContainer {
+    position: relative;
+    height: 75%;
+    width: 100%;
+  }
+
+  .projectSec img{
+    display: block;
+    border: 1.5px #bdbdbd solid;
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgOverlay{
+    position: absolute;
+    padding: 4rem 2rem;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1.5px #bdbdbd solid;
+    transition: .5s ease;
+    background-color: #f0f3bd;
+  }
+
+  .imgContainer:hover .imgOverlay {
+    opacity: 0.8;
+  }
+
+  .morePro{
+    height: 4rem;
+    padding: 0.9rem;
+    background-color: #f0f3bd;
+    border-top: 2px #c0c0c0 solid;
+    border-bottom: 2px #c0c0c0 solid;
+  }
+
+  .morePro button{
+    display: block;
+    color: white;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #05668d;
+    border-bottom: 2px #555 solid;
+    text-decoration: none;
+    border-radius: 2px;
+    letter-spacing: 0.1rem;
+  }
+
+  .morePro button:focus,
+  .morePro button:hover{
+    background-color: #028090;
+    color: white;
+
+  }
+
+/*====== projectSec_Haldmann ======*/
+
+
+
+/*====== aboutUs_Haldmann ======*/
+
+.aboutUsSec{
+  width: 100%;
+  padding: 2rem 0;
+  height: 30rem;
+  background-color: #fff;
+}
+
+.aboutUsSec img{
+  display: block;
+  border: 1.5px #bdbdbd solid;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutUsSec h3{
+  color: #028090;
+}
+
+.aboutUsSec p{
+  padding: .5 0;
+  padding-left: 1rem;
+}
+
+/*.projectBox{
+  overflow: hidden;
+  margin-top: 2rem;
+  padding: 2.8rem;
+  height: 28rem;
+}*/
+
+.sectionLine2{
+  width: 89%;
+  height: 0.15rem;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  background-color: #c0c0c0;
+}
+
+/*====== aboutUs_Haldmann ======*/

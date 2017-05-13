@@ -1,0 +1,19 @@
+
+<section>
+  <div class="projectSec">
+    {% for image in page.projectImg %}
+      <div class="projectBox col-xs-12 col-sm-6 col-md-4">
+        <h4>{{image.title}}</h4>
+        <div class="imgContainer">
+          <img src="{{image.image_path}}" alt="{{image.title}}">
+          <div class="imgOverlay">
+            <h5>{{image.description}}</h5>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="morePro">
+    <button type="button" class="btn">Mehr Projekte</button>
+  </div>
+</section>
