@@ -6,19 +6,19 @@ projectImg:
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
      aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-      bad dolores et ea rebum. Stet clita kasd gubergren
+
   - image_path: /medien/beispiel-haustüre.jpg
     title: Haustüren
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
      aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-      duo dolores et tür rebum. Stet clita kasd gubergren
+
   - image_path: /medien/beispiel-küche.jpg
     title: Küchen
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
      aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-      duo dolores et ea rebum. Stet clita küche gubergren
+
 
 aboutUs:
     image_path: /medien/beispiel-schreiner.jpg
@@ -34,10 +34,28 @@ aboutUs:
       dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
       tempor invidunt ut labore et dolore magna
 
+footer:
+ - title:
+   image_path: /medien/beispiel-bad.jpg
+ - title: Schreinerei Haldmann
+   description: Schreinerei Haldmann GmbH <br>
+                Augartenstrasse 99 <br>
+                9204 Andwil SG <br>
+                Tel. 012 345 67 89 <br>
+                info@haldmann-mockup.ch
+
+ - title: Öffnungszeiten
+   description: "Mo-Fr: 7.00-17.00 <br>
+                Sa: Geschlossen <br>
+                So: Geschlossen"
+
+
 ---
 <div class="container siteWrapper">
   {% include header_Haldmann.html %}
+  {% comment %}
   {% include projectSec_Haldmann.html %}
   {% include aboutUs_Haldmann.html %}
-  <div class="projectSec"></div>
+  {% include footer_Haldmann.html %}
+  {% endcomment %}
 </div>

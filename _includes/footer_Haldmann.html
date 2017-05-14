@@ -1,0 +1,21 @@
+<footer>
+  <div class="footer" id="footer">
+    {% for footer in page.footer %}
+      <div class="mapBox col-xs-12 col-sm-6 col-md-4">
+        <h4>{{footer.title}}</h4>
+        <div class="mapContainer">
+          {% if footer.image_path %}
+              <div id="map"></div>
+          {% endif %}
+          <p>{{footer.description}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="endFooter">
+    <ul>
+      <li><a href="#">Website by elenoidDesign </a></li>
+      <li><a href="#">Impressum </a></li>
+    </ul>
+  </div>
+</footer>

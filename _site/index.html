@@ -32,72 +32,17 @@
     <div class="sectionLine"></div>
   </div>
 
-  <div class="navigationSec">
+  <div class="navigationSec" id="navigationSec">
     <ul>
-      <li><a href="#">Projekte </a></li>
-      <li><a href="#">Über uns </a></li>
-      <li><a href="#">Kontakt </a></li>
-      <li><a href="#">Öffnungszeiten </a></li>
+      <li><a href="#navigationSec">Projekte </a></li>
+      <li><a href="#morePro">Über uns </a></li>
+      <li><a href="#morePro">Kontakt </a></li>
+      <li><a href="#morePro">Öffnungszeiten </a></li>
     </ul>
   </div>
 </header>
 
   
-<section>
-  <div class="projectSec">
-    
-      <div class="projectBox col-xs-12 col-sm-6 col-md-4">
-        <h4>Bäder</h4>
-        <div class="imgContainer">
-          <img src="/medien/beispiel-bad.jpg" alt="Bäder">
-          <div class="imgOverlay">
-            <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo bad dolores et ea rebum. Stet clita kasd gubergren</h5>
-          </div>
-        </div>
-      </div>
-    
-      <div class="projectBox col-xs-12 col-sm-6 col-md-4">
-        <h4>Haustüren</h4>
-        <div class="imgContainer">
-          <img src="/medien/beispiel-haustüre.jpg" alt="Haustüren">
-          <div class="imgOverlay">
-            <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et tür rebum. Stet clita kasd gubergren</h5>
-          </div>
-        </div>
-      </div>
-    
-      <div class="projectBox col-xs-12 col-sm-6 col-md-4">
-        <h4>Küchen</h4>
-        <div class="imgContainer">
-          <img src="/medien/beispiel-küche.jpg" alt="Küchen">
-          <div class="imgOverlay">
-            <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita küche gubergren</h5>
-          </div>
-        </div>
-      </div>
-    
-  </div>
-  <div class="morePro">
-    <button type="button" class="btn">Mehr Projekte</button>
-  </div>
-</section>
-
-  <section>
-  <div class="aboutUsSec">
-    <div class="projectBox col-md-7">
-      <h3>Über uns</h3>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita küche gubergren consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-    </div>
-    <div class="projectBox col-md-5"> <!--col-md-6 einfugen-->
-      <div class="imgContainer">
-        <img src="/medien/beispiel-schreiner.jpg" alt="Über uns">
-      </div>
-    </div>
-  </div>
-  <div class="sectionLine2"></div>
-</section>
-
-  <div class="projectSec"></div>
 </div>
 
 
@@ -117,5 +62,38 @@
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-XXXXX-X','auto');ga('send','pageview');
       </script>
+      <script>
+        function initMap() {
+          var uluru = {lat: 47.4411327, lng: 9.2645655};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfwyv_WOC-afoHUcYcce-JDfATOWPabLM&callback=initMap">
+    </script>
+    <script>
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 600, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    </script>
+
+
     </body>
 </html>
