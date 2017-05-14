@@ -1,10 +1,22 @@
 <header>
+  <div class="navigationSmall visible-xs">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+    <div id="mySidenav" class="sidenav visible-xs">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+       <a href="#willkommen" onclick="closeNav()">Willkommen</a>
+       <a href="#uber-mich" onclick="closeNav()">Über mich</a>
+       <a href="#vita" onclick="closeNav()">Vita</a>
+       <a href="#angebote" onclick="closeNav()">Angebote</a>
+       <a href="#kontakt" onclick="closeNav()">Kontakt</a>
+    </div>
+  </div>
+
   <div class="headerLogo">
     <img src="logo-daten/mockup-haldmann.png" alt="logo-haldmann">
     <div class="sectionLine"></div>
   </div>
 
-  <div class="navigationSec" id="navigationSec">
+  <div class="navigationSec hidden-xs" id="navigationSec">
     <ul>
       <li><a href="#navigationSec">Projekte </a></li>
       <li><a href="#morePro">Über uns </a></li>

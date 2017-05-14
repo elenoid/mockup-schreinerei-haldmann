@@ -27,12 +27,24 @@
 
       <div class="container siteWrapper">
   <header>
+  <div class="navigationSmall visible-xs">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+    <div id="mySidenav" class="sidenav visible-xs">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+       <a href="#willkommen" onclick="closeNav()">Willkommen</a>
+       <a href="#uber-mich" onclick="closeNav()">Über mich</a>
+       <a href="#vita" onclick="closeNav()">Vita</a>
+       <a href="#angebote" onclick="closeNav()">Angebote</a>
+       <a href="#kontakt" onclick="closeNav()">Kontakt</a>
+    </div>
+  </div>
+
   <div class="headerLogo">
     <img src="logo-daten/mockup-haldmann.png" alt="logo-haldmann">
     <div class="sectionLine"></div>
   </div>
 
-  <div class="navigationSec" id="navigationSec">
+  <div class="navigationSec hidden-xs" id="navigationSec">
     <ul>
       <li><a href="#navigationSec">Projekte </a></li>
       <li><a href="#morePro">Über uns </a></li>
@@ -48,9 +60,7 @@
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
       <script src="js/vendor/bootstrap.min.js"></script>
-
       <script src="js/main.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -62,6 +72,7 @@
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-XXXXX-X','auto');ga('send','pageview');
       </script>
+
       <script>
         function initMap() {
           var uluru = {lat: 47.4411327, lng: 9.2645655};
@@ -74,26 +85,10 @@
             map: map
           });
         }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfwyv_WOC-afoHUcYcce-JDfATOWPabLM&callback=initMap">
-    </script>
-    <script>
-    $("a").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 600, function(){
-          window.location.hash = hash;
-        });
-      }
-    });
+      </script>
 
-    </script>
-
-
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfwyv_WOC-afoHUcYcce-JDfATOWPabLM&callback=initMap">
+      </script>
     </body>
 </html>
