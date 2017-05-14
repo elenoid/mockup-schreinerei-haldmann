@@ -71,8 +71,11 @@
   }
 
   @media (max-width: 992px){
+    .headerLogo{
+      padding: 3rem 0;
+    }
     .headerLogo img{
-      width: 85%;
+      width: 65%;
     }
   }
 
