@@ -27,6 +27,33 @@
 
       <div class="container siteWrapper">
   
+  <header>
+  <div class="navigationSmall visible-xs">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+    <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+       <a href="#navigationSec" onclick="closeNav()">Projekte</a>
+       <a href="#" onclick="closeNav()">Über uns</a>
+       <a href="#" onclick="closeNav()">Kontakt</a>
+       <a href="#" onclick="closeNav()">Öffnungszeiten</a>
+    </div>
+  </div>
+
+  <div class="headerLogo">
+    <img src="logo-daten/mockup-haldmann.png" alt="logo-haldmann">
+    <div class="sectionLine"></div>
+  </div>
+
+  <div class="navigationSec hidden-xs" id="navigationSec">
+    <ul>
+      <li><a href="#navigationSec">Projekte </a></li>
+      <li><a href="#morePro">Über uns </a></li>
+      <li><a href="#morePro">Kontakt </a></li>
+      <li><a href="#morePro">Öffnungszeiten </a></li>
+    </ul>
+  </div>
+</header>
+
   
 <section>
   <div class="projectSec row">
@@ -62,9 +89,24 @@
       </div>
     
   </div>
-  <!-- <div class="morePro" id="morePro">
+  <div class="morePro" id="morePro">
     <button type="button" class="btn">Mehr Projekte</button>
-  </div> -->
+  </div>
+</section>
+
+  <section>
+  <div class="aboutUsSec row">
+    <div class="aboutTextBox col-xs-12 col-sm-12 col-md-7">
+      <h3>Über uns</h3>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita küche gubergren consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+    </div>
+    <div class="aboutImgBox col-xs-12 col-sm-12 col-md-5">
+      <div class="imgAboutContainer">
+        <img src="/medien/beispiel-schreiner.jpg" alt="Über uns">
+      </div>
+    </div>
+    <div class="sectionLine2"></div>
+  </div>
 </section>
 
   

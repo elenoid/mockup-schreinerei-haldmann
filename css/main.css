@@ -153,8 +153,8 @@
   .projectSec h4{
     display: block;
     margin: .5rem auto;
-    width: 15rem;
     color: #aaa;
+    width: 15rem;
     width: 15rem;
   }
 
@@ -221,17 +221,46 @@
 
   }
 
+
   @media (max-width: 768px) {
-
+    .imgContainer {
+      height: 20rem;
+      width: 20rem;
     }
 
-    @media (max-width: 992px) {
-
+    .projectBox{
+      height: 23rem;
     }
 
-    @media (max-width: 1200px) {
-
+    .projectSec h4{
+      width: 20rem;
+      width: 20rem;
     }
+  }
+
+  @media (max-width: 395px) {
+    .projectSec h4{
+      width: 15rem;
+      width: 15rem;
+    }
+
+    .projectBox{
+      height: 19.5rem;
+    }
+
+    .imgContainer {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+
+  /*@media (max-width: 992px) {
+
+  }
+
+  @media (max-width: 1200px) {
+
+  }*/
 
 /*====== projectSec_Haldmann ======*/
 
@@ -240,9 +269,10 @@
 /*====== aboutUs_Haldmann ======*/
 
 .aboutUsSec{
+  margin: 0;
   width: 100%;
-  padding: 2rem 1rem;
-  height: 30rem;
+  padding: 4rem 2.3rem;
+  padding-bottom: 3rem;
   background-color: #fff;
 }
 
@@ -254,28 +284,49 @@
 }
 
 .aboutUsSec h3{
+  margin-top: 0;
   color: #028090;
 }
 
 .aboutUsSec p{
-  padding: .5 0;
-  padding-left: 1rem;
+  margin-bottom: 2rem;
 }
 
-/*.projectBox{
+.aboutTextBox{
   overflow: hidden;
-  margin-top: 2rem;
-  padding: 2.8rem;
-  height: 28rem;
-}*/
+}
+
+.aboutImgBox{
+  overflow: hidden;
+  height: 19.5rem;
+}
+
+.imgAboutContainer {
+  position: relative;
+  margin: auto;
+  height: 15rem;
+  width: 21rem;
+}
 
 .sectionLine2{
   width: 85%;
+  clear: both;
   height: 0.15rem;
   background-color: black;
   margin: 0 auto;
-  margin-bottom: 4rem;
   background-color: #c0c0c0;
+}
+
+@media (max-width: 768px) {
+  .imgAboutContainer {
+    position: relative;
+    margin: auto;
+    height: 10rem;
+    width: 15rem;
+  }
+  .aboutImgBox{
+    height: 13rem;
+  }
 }
 
 /*====== aboutUs_Haldmann ======*/
