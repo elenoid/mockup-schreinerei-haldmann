@@ -5,6 +5,7 @@
 
   body{
     font-family: 'Raleway', sans-serif;
+    color: #333;
   }
 
   .siteWrapper{
@@ -16,6 +17,7 @@
   .navigationSmall{
     width: 100%;
     height: 4rem;
+    white-space: nowrap;
     position: relative;
     background-color: #028090;
     border-top: 2px #05668d solid;
@@ -25,11 +27,11 @@
   .navigationSmall span{
     display: block;
     padding: .5rem 1rem;
-    color: white;
+    color: #eee;
   }
 
   .sidenav{
-    background:#222;
+    background:#05668d;
     height:100%;
     left:0;
     overflow-x:hidden;
@@ -42,7 +44,7 @@
   }
 
   .sidenav a{
-    color:#818181;
+    color: #eee;
     display:block;
     font-size:25px;
     padding:8px 8px 8px 32px;
@@ -138,20 +140,22 @@
 
   .projectSec{
     width: 100%;
-    height: 30rem;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
+    margin: 0;
     background-color: #ebebeb;
   }
 
   .projectBox{
     overflow: hidden;
-    margin-top: 2rem;
-    padding: 4rem;
-    height: 28rem;
+    height: 19.5rem;
   }
 
   .projectSec h4{
+    display: block;
+    margin: .5rem auto;
+    width: 15rem;
     color: #aaa;
+    width: 15rem;
   }
 
   .projectSec p{
@@ -161,8 +165,9 @@
 
   .imgContainer {
     position: relative;
-    height: 75%;
-    width: 100%;
+    margin: auto;
+    height: 15rem;
+    width: 15rem;
   }
 
   .projectSec img{
@@ -215,6 +220,18 @@
     color: white;
 
   }
+
+  @media (max-width: 768px) {
+
+    }
+
+    @media (max-width: 992px) {
+
+    }
+
+    @media (max-width: 1200px) {
+
+    }
 
 /*====== projectSec_Haldmann ======*/
 
