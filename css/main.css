@@ -68,7 +68,6 @@
 
   .headerLogo{
     width: 100%;
-    position: relative;
     background-image: url(../medien/header-logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
