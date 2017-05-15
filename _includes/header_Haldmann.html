@@ -1,6 +1,15 @@
 <header>
   <div class="navigationSmall visible-xs">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
     <div id="mySidenav" class="sidenav">
        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
        <a href="#willkommen" onclick="closeNav()">Willkommen</a>
