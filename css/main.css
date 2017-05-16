@@ -170,6 +170,7 @@
     width: 15rem;
   }
 
+
   .projectSec img{
     display: block;
     border: 2.5px #bdbdbd solid;
@@ -271,7 +272,7 @@
 .aboutUsSec{
   margin: 0;
   width: 100%;
-  padding: 4rem 2.3rem;
+  padding: 4rem 2rem;
   padding-bottom: 3rem;
   background-color: #fff;
 }
@@ -296,7 +297,14 @@
   overflow: hidden;
 }
 
+.aboutTextCenterBox{
+  margin: auto;
+  width: 34.5rem;
+  padding: 0 .5rem;
+}
+
 .aboutImgBox{
+  padding: 0;
   overflow: hidden;
   height: 19.5rem;
 }
@@ -304,12 +312,12 @@
 .imgAboutContainer {
   position: relative;
   margin: auto;
-  height: 15rem;
-  width: 21rem;
+  height: 16rem;
+  width: 23rem;
 }
 
 .sectionLine2{
-  width: 85%;
+  width: 90%;
   clear: both;
   height: 0.15rem;
   background-color: black;
@@ -317,17 +325,39 @@
   background-color: #c0c0c0;
 }
 
+@media (max-width: 1200px) {
+  .aboutTextCenterBox{
+    width: 31rem;
+  }
+}
+
+@media (max-width: 992px){
+  .aboutTextCenterBox{
+    width: 37.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .aboutTextCenterBox{
+    width: 20rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .aboutTextCenterBox{
+    padding: 0;
+    width: 100%;
+  }
+
   .imgAboutContainer {
     position: relative;
     margin: auto;
     height: 10rem;
     width: 15rem;
   }
-  .aboutImgBox{
-    height: 13rem;
-  }
 }
+
+
 
 /*====== aboutUs_Haldmann ======*/
 
@@ -338,27 +368,34 @@
 
   .footer{
     width: 100%;
-    height: 19rem;
-    padding: 0 1rem;
-    padding-top: 2rem;
+    margin: 0;
+    padding: 2rem 1rem;
     background-color: #ebebeb;
   }
 
-  .footer p{
-    line-height: 1.5;
+  .mapBox{
+    height: 10rem;
+    margin: 2rem 0;
   }
 
-
-  .mapBox{
+  .mapCenterBox{
+    display: block;
     overflow: hidden;
-    padding: 2rem 4rem;
     height: 100%;
+    width: 13rem;
+    margin: auto;
+
   }
 
   .mapContainer {
-    height: 80%;
+    height: 100%;
     width: 100%;
   }
+
+  .mapContainer p{
+    line-height: 1.5;
+  }
+
 
   .footer h4{
     color: #028090;
@@ -384,7 +421,6 @@
     float: right;
     display: block;
     list-style: none;
-    text-align: center;
     margin-right: 5.5rem;
   }
 
@@ -401,5 +437,23 @@
 
   .endFooter a{
     color: #ebebeb;
+  }
+
+  @media (max-width: 992px) {
+    .footer>.mapBox:first-child {
+      width: 100%;
+    }
+
+    .footer>.mapBox:first-child>.mapCenterBox {
+      width: 100%;
+    }
+    .endFooter ul{
+      float: none;
+      padding: 0;
+      display: block;
+      list-style: none;
+      text-align: center;
+      margin: auto;
+    }
   }
 /*====== footer_Haldmann ======*/
