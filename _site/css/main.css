@@ -329,11 +329,19 @@
   .aboutTextCenterBox{
     width: 31rem;
   }
+
+  .sectionLine2{
+    width: 97%;
+  }
 }
 
 @media (max-width: 992px){
   .aboutTextCenterBox{
     width: 37.5rem;
+  }
+
+  .sectionLine2{
+    width: 90%;
   }
 }
 
@@ -440,6 +448,15 @@
   }
 
   @media (max-width: 992px) {
+    .footer{
+      padding: .5rem 1rem;
+    }
+
+    .mapBox{
+      height: 10rem;
+      margin: 1rem 0;
+    }
+
     .footer>.mapBox:first-child {
       width: 100%;
     }
