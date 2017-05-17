@@ -84,7 +84,7 @@
   }
 
   .sectionLine{
-    width: 85%;
+    width: 87%;
     height: 0.15rem;
     background-color: black;
     margin: 0 auto;
@@ -123,12 +123,28 @@
     color: white;
   }
 
+  @media (max-width: 1200px) {
+    .sectionLine{
+      width: 91%;
+    }
+  }
+
   @media (max-width: 992px){
     .headerLogo{
       padding: 3rem 0;
     }
     .headerLogo img{
       width: 65%;
+    }
+
+    .sectionLine{
+      width: 83%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navigationSec{
+      height: 1rem;
     }
   }
 
@@ -140,12 +156,13 @@
 
   .projectSec{
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     margin: 0;
     background-color: #ebebeb;
   }
 
   .projectBox{
+    padding: 0;
     overflow: hidden;
     height: 19.5rem;
   }
@@ -272,7 +289,7 @@
 .aboutUsSec{
   margin: 0;
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   padding-bottom: 3rem;
   background-color: #fff;
 }
@@ -294,13 +311,13 @@
 }
 
 .aboutTextBox{
+  padding: 0;
   overflow: hidden;
 }
 
 .aboutTextCenterBox{
   margin: auto;
-  width: 34.5rem;
-  padding: 0 .5rem;
+  width: 33rem;
 }
 
 .aboutImgBox{
@@ -312,12 +329,12 @@
 .imgAboutContainer {
   position: relative;
   margin: auto;
-  height: 16rem;
-  width: 23rem;
+  height: 14rem;
+  width: 21rem;
 }
 
 .sectionLine2{
-  width: 90%;
+  width: 87%;
   clear: both;
   height: 0.15rem;
   background-color: black;
@@ -327,21 +344,26 @@
 
 @media (max-width: 1200px) {
   .aboutTextCenterBox{
-    width: 31rem;
+    width: 30rem;
+  }
+
+  .imgAboutContainer {
+    height: 13.7rem;
+    width: 20rem;
   }
 
   .sectionLine2{
-    width: 97%;
+    width: 91%;
   }
 }
 
 @media (max-width: 992px){
   .aboutTextCenterBox{
-    width: 37.5rem;
+    width: 38rem;
   }
 
   .sectionLine2{
-    width: 90%;
+    width: 83%;
   }
 }
 
@@ -353,8 +375,7 @@
 
 @media (max-width: 395px) {
   .aboutTextCenterBox{
-    padding: 0;
-    width: 100%;
+    width: 15rem;
   }
 
   .imgAboutContainer {
@@ -362,6 +383,12 @@
     margin: auto;
     height: 10rem;
     width: 15rem;
+  }
+
+  .aboutImgBox{
+    padding: 0;
+    overflow: hidden;
+    height: 14rem;
   }
 }
 
@@ -377,11 +404,12 @@
   .footer{
     width: 100%;
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     background-color: #ebebeb;
   }
 
   .mapBox{
+    padding: 0;
     height: 10rem;
     margin: 2rem 0;
   }
@@ -390,9 +418,8 @@
     display: block;
     overflow: hidden;
     height: 100%;
-    width: 13rem;
+    width: 15rem;
     margin: auto;
-
   }
 
   .mapContainer {
@@ -447,30 +474,55 @@
     color: #ebebeb;
   }
 
-  @media (max-width: 992px) {
-    .footer{
-      padding: .5rem 1rem;
-    }
-
-    .mapBox{
-      height: 10rem;
-      margin: 1rem 0;
-    }
-
-    .footer>.mapBox:first-child {
-      width: 100%;
-    }
-
-    .footer>.mapBox:first-child>.mapCenterBox {
-      width: 100%;
-    }
-    .endFooter ul{
-      float: none;
-      padding: 0;
-      display: block;
-      list-style: none;
-      text-align: center;
-      margin: auto;
-    }
+@media (max-width: 992px) {
+  .footer{
+    padding: 1rem 1rem;
   }
+
+  .mapBox{
+    height: 9rem;
+    margin: 1rem 0;
+  }
+
+  .footer>.mapBox:first-child {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .footer>.mapBox:first-child>.mapCenterBox {
+    width: 38.5rem;
+  }
+
+  .endFooter ul{
+    float: none;
+    padding: 0;
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer>.mapBox:first-child>.mapCenterBox {
+    width: 20rem;
+  }
+
+  .mapCenterBox{
+    width: 20rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .footer>.mapBox:first-child>.mapCenterBox {
+    width: 15rem;
+  }
+
+  .mapCenterBox{
+    width: 15rem;
+  }
+}
+
+
 /*====== footer_Haldmann ======*/
