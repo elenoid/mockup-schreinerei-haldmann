@@ -197,7 +197,7 @@
 
   .imgOverlay{
     position: absolute;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     top: 0;
     height: 100%;
     width: 100%;
@@ -254,6 +254,10 @@
       width: 20rem;
       width: 20rem;
     }
+
+    .imgOverlay{
+      padding: 4rem 2rem;
+    }
   }
 
   @media (max-width: 395px) {
@@ -269,6 +273,10 @@
     .imgContainer {
       height: 15rem;
       width: 15rem;
+    }
+
+    .imgOverlay{
+      padding: 2rem 2rem;
     }
   }
 
