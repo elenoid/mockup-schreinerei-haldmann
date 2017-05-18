@@ -1,0 +1,416 @@
+
+  html{
+    font-size: 16px;
+  }
+
+  body{
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+  }
+
+  .siteWrapper{
+    box-shadow: 1px -5px 5px 6px #f8f8f8;
+    padding: 0;
+  }
+/*====== headerNav_Haldmann ======*/
+
+  .navigationSmall{
+    width: 100%;
+    height: 4rem;
+    white-space: nowrap;
+    position: relative;
+    background-color: #028090;
+    border-top: 2px #05668d solid;
+    border-bottom: 2px #05668d solid;
+  }
+
+  .navigationSmall span{
+    display: block;
+    padding: .5rem 1rem;
+    color: #eee;
+  }
+
+  .sidenav{
+    background:#05668d;
+    height:100%;
+    left:0;
+    overflow-x:hidden;
+    padding-top:60px;
+    position:fixed;
+    top:0;
+    transition:.5s;
+    width:0;
+    z-index:3;
+  }
+
+  .sidenav a{
+    color: #eee;
+    display:block;
+    font-size:25px;
+    padding:8px 8px 8px 32px;
+    text-decoration:none;
+    transition:.3s;
+  }
+  .sidenav a:hover,.offcanvas a:focus,.offcanvas a:focus{color:#f1f1f1;}
+
+  .sidenav .closebtn,.sidenavR .closebtn{
+    font-size:36px;
+    margin-left:50px;
+    position:absolute;
+    right:25px;
+    top:0;
+  }
+/*====== headerNav_Haldmann ======*/
+
+
+/*====== header_Haldmann ======*/
+
+
+
+
+  .headerLogo{
+    width: 100%;
+    background-image: url(../medien/header-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5.5rem 0rem;
+  }
+
+  .headerLogo img{
+    display: block;
+    width: 32%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sectionLine{
+    width: 87%;
+    height: 0.15rem;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: #c0c0c0;
+  }
+
+  .navigationSec{
+    width: 100%;
+    height: 4rem;
+    padding-top: 1.2rem;
+    background-color: #028090;
+    border-top: 2px #05668d solid;
+    border-bottom: 2px #05668d solid;
+  }
+
+  .navigationSec ul{
+    padding: 0;
+    display: block;
+    list-style: none;
+    text-align: center;
+  }
+
+  .navigationSec li{
+    color: white;
+    display: inline-block;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .navigationSec li + li:before{
+    content: "/ ";
+  }
+
+  .navigationSec a{
+    color: white;
+  }
+
+  @media (max-width: 1200px) {
+    .sectionLine{
+      width: 91%;
+    }
+  }
+
+  @media (max-width: 992px){
+    .headerLogo{
+      padding: 3rem 0;
+    }
+    .headerLogo img{
+      width: 65%;
+    }
+
+    .sectionLine{
+      width: 83%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navigationSec{
+      height: 1rem;
+    }
+  }
+
+/*====== header_Haldmann ======*/
+
+
+
+/*====== projectSec_Haldmann ======*/
+
+  .projectSec{
+    width: 100%;
+    padding: 2rem 0rem;
+    margin: 0;
+    background-color: #ebebeb;
+  }
+
+  .projectBox{
+    padding: 0;
+    overflow: hidden;
+    height: 19.5rem;
+  }
+
+  .projectSec h4{
+    display: block;
+    margin: .5rem auto;
+    color: #aaa;
+    width: 15rem;
+    width: 15rem;
+  }
+
+  .projectSec p{
+    color: #333;
+    text-align: justify;
+  }
+
+  .imgContainer {
+    position: relative;
+    margin: auto;
+    height: 15rem;
+    width: 15rem;
+  }
+
+
+  .projectSec img{
+    display: block;
+    border: 2.5px #bdbdbd solid;
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgOverlay{
+    position: absolute;
+    padding: 2rem 2rem;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 2.5px #bdbdbd solid;
+    transition: .5s ease;
+    background-color: #f0f3bd;
+  }
+
+  .imgContainer:hover .imgOverlay {
+    opacity: 0.8;
+  }
+
+  .morePro{
+    height: 4rem;
+    padding: 0.9rem;
+    background-color: #f0f3bd;
+    border-top: 2px #c0c0c0 solid;
+    border-bottom: 2px #c0c0c0 solid;
+  }
+
+  .morePro button{
+    display: block;
+    color: white;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #05668d;
+    border-bottom: 2px #555 solid;
+    text-decoration: none;
+    border-radius: 2px;
+    letter-spacing: 0.1rem;
+  }
+
+  .morePro button:focus,
+  .morePro button:hover{
+    background-color: #028090;
+    color: white;
+
+  }
+
+
+  @media (max-width: 768px) {
+    .imgContainer {
+      height: 20rem;
+      width: 20rem;
+    }
+
+    .projectBox{
+      height: 23rem;
+    }
+
+    .projectSec h4{
+      width: 20rem;
+      width: 20rem;
+    }
+
+    .imgOverlay{
+      padding: 4rem 2rem;
+    }
+  }
+
+  @media (max-width: 395px) {
+    .projectSec h4{
+      width: 15rem;
+      width: 15rem;
+    }
+
+    .projectBox{
+      height: 19.5rem;
+    }
+
+    .imgContainer {
+      height: 15rem;
+      width: 15rem;
+    }
+
+    .imgOverlay{
+      padding: 2rem 2rem;
+    }
+  }
+
+
+/*====== projectSec_Haldmann ======*/
+
+
+
+
+/*====== footer_Haldmann ======*/
+
+
+  .footer{
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0rem;
+    background-color: #ebebeb;
+  }
+
+  .mapBox{
+    padding: 0;
+    height: 10rem;
+    margin: 2rem 0;
+  }
+
+  .mapCenterBox{
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 15rem;
+    margin: auto;
+  }
+
+  .mapContainer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .mapContainer p{
+    line-height: 1.5;
+  }
+
+
+  .footer h4{
+    color: #028090;
+  }
+
+
+  #map {
+  height: 100%;
+  width: 100%;
+  }
+
+  .endFooter{
+    width: 100%;
+    height: 4rem;
+    padding-top: 1.3rem;
+    background-color: #05668d;
+    border-top: 2px #028090 solid;
+    border-bottom: 2px #028090 solid;
+  }
+
+  .endFooter ul{
+    padding: 0;
+    float: right;
+    display: block;
+    list-style: none;
+    margin-right: 5.5rem;
+  }
+
+  .endFooter li{
+    color: white;
+    display: inline-block;
+    font-size: .8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .endFooter li + li:before{
+    content: "| ";
+  }
+
+  .endFooter a{
+    color: #ebebeb;
+  }
+
+@media (max-width: 992px) {
+  .footer{
+    padding: 1rem 1rem;
+  }
+
+  .mapBox{
+    height: 9rem;
+    margin: 1rem 0;
+  }
+
+  .footer>.mapBox:first-child {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .footer>.mapBox:first-child>.mapCenterBox {
+    width: 38.5rem;
+  }
+
+  .endFooter ul{
+    float: none;
+    padding: 0;
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer>.mapBox:first-child>.mapCenterBox {
+    width: 20rem;
+  }
+
+  .mapCenterBox{
+    width: 20rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .footer>.mapBox:first-child>.mapCenterBox {
+    width: 15rem;
+  }
+
+  .mapCenterBox{
+    width: 15rem;
+  }
+}
+
+
+/*====== footer_Haldmann ======*/

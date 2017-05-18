@@ -1,19 +1,21 @@
 <footer>
-  <div class="footer row" id="footer">
-    {% for footer in page.footer %}
-      <div class="mapBox col-xs-12 col-sm-6 col-md-4">
-        <div class="mapCenterBox">
-        <h4>{{footer.title}}</h4>
-        <div class="mapContainer">
-          {% if footer.map %}
-              <div id="map"></div>
-          {% endif %}
-          <p>{{footer.description}}</p>
+  {% if page.contact %}
+    <div class="footer row" id="footer">
+      {% for footer in page.footer %}
+        <div class="mapBox col-xs-12 col-sm-6 col-md-4">
+          <div class="mapCenterBox">
+          <h4>{{footer.title}}</h4>
+          <div class="mapContainer">
+            {% if footer.map %}
+                <div id="map"></div>
+            {% endif %}
+            <p>{{footer.description}}</p>
+          </div>
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
+  {% endif %}
   <div class="endFooter" id="endFooter">
     <ul>
       <li><a href="#">Website by elenoidDesign </a></li>
