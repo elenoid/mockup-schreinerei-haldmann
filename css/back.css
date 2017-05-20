@@ -5,7 +5,9 @@
 
   body{
     font-family: 'Raleway', sans-serif;
+    background-image: url(../medien/topography.png);
     color: #333;
+    /* Background pattern from Subtle Patterns */
   }
 
   .siteWrapper{
@@ -64,9 +66,6 @@
 
 
 /*====== header_Haldmann ======*/
-
-
-
 
   .headerLogo{
     width: 100%;
@@ -283,6 +282,132 @@
 
 /*====== projectSec_Haldmann ======*/
 
+
+
+/*====== impressumSec_Haldmann ======*/
+
+  .impressumSec{
+    width: 100%;
+    padding: 5rem 0rem;
+    margin: 0;
+    background-color: #ebebeb;
+  }
+
+  .impressumBox{
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+
+  .impressumSec h4{
+    display: block;
+    margin: .5rem auto;
+    color: #aaa;
+    width: 33rem;
+  }
+
+  .impressumSec p{
+    color: #333;
+    text-align: justify;
+  }
+
+  .impressumContainer {
+    position: relative;
+    margin: auto;
+    width: 33rem;
+  }
+
+  .morePro{
+    height: 4rem;
+    padding: 0.9rem;
+    background-color: #f0f3bd;
+    border-top: 2px #c0c0c0 solid;
+    border-bottom: 2px #c0c0c0 solid;
+  }
+
+  .morePro button{
+    display: block;
+    color: white;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #05668d;
+    border-bottom: 2px #555 solid;
+    text-decoration: none;
+    border-radius: 2px;
+    letter-spacing: 0.1rem;
+  }
+
+  .morePro button:focus,
+  .morePro button:hover{
+    background-color: #028090;
+    color: white;
+
+  }
+
+
+  @media (max-width: 768px) {
+    .impressumContainer {
+      width: 20rem;
+    }
+
+    .impressumSec h4{
+      width: 20rem;
+    }
+
+    .imgOverlay{
+      padding: 4rem 2rem;
+    }
+  }
+
+  @media (max-width: 395px) {
+    .impressumSec h4{
+      width: 15rem;
+    }
+
+    .impressumSec{
+      padding: 2rem 0rem;
+    }
+
+    .impressumContainer {
+      width: 15rem;
+    }
+
+    .imgOverlay{
+      padding: 2rem 2rem;
+    }
+  }
+
+
+/*====== impressumSec_Haldmann ======*/
+
+
+
+/*====== newsSec_Haldmann ======*/
+
+.postSec{
+  width: 100%;
+  padding: 5rem 0rem;
+  margin: 0;
+  background-color: #ebebeb;
+}
+
+.postSec h3{
+  display: block;
+  margin: .5rem auto;
+  margin-bottom: -1.1rem;
+  color: #028090;
+  width: 33rem;
+}
+
+.postSec p{
+  color: #333;
+}
+
+.postDate{
+  text-align: right;
+}
+
+/*====== newsSec_Haldmann ======*/
 
 
 

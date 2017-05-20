@@ -1,0 +1,20 @@
+
+<section>
+  <div class="impressumSec row">
+    {% for impressum in page.impressum %}
+      <div class="impressumBox col-xs-12 col-sm-12 col-md-12">
+        <h4>{{impressum.title}}</h4>
+        <div class="impressumContainer">
+            <p>{{impressum.description}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="morePro" id="morePro">
+    {% if page.backbutton%}
+    <a href="../index.html">
+      <button type="button" class="btn">Zurück</button>
+    </a>
+    {% endif %}
+  </div>
+</section>
