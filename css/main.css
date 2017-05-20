@@ -413,6 +413,103 @@
 
 
 
+/*====== newsSec_Haldmann ======*/
+
+
+.impressumContainer {
+  position: relative;
+  margin: auto;
+  width: 87%;
+}
+
+.impressumContainer:last-child {
+  text-align: justify;
+}
+
+.postSec{
+  width: 100%;
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  background-color: #fff;
+}
+
+.postSec img{
+  display: none;
+}
+
+
+
+.postSec h3{
+  display: block;
+  color: #028090;
+  margin: .5rem auto;
+  width: 87%;
+}
+
+.postSec h5{
+  display: block;
+  color: #aaa;
+  margin: .5rem auto;
+  margin-bottom: -1.1rem;
+  width: 87%;
+}
+
+.postBox{
+  padding: .5rem 0;
+}
+
+.postDate{
+  color: #aaa;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .impressumContainer {
+    width: 91%;
+  }
+
+  .postSec h5,
+  .postSec h3{
+    width: 91%;
+  }
+
+}
+
+@media (max-width: 992px){
+  .impressumContainer {
+    width: 83%;
+  }
+
+  .postSec h5,
+  .postSec h3{
+    width: 83%;
+  }
+}
+
+@media (max-width: 768px) {
+  .impressumContainer {
+    width: 20rem;
+  }
+  .postSec h5,
+  .postSec h3{
+    width: 20rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .impressumContainer {
+    width: 15rem;
+  }
+  .postSec h5,
+  .postSec h3{
+    width: 15rem;
+  }
+}
+/*====== newsSec_Haldmann ======*/
+
+
+
 /*====== footer_Haldmann ======*/
 
 

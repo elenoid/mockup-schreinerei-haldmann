@@ -1,21 +1,14 @@
-
 <section>
   <div class="postSec row">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:1 %}
+    <a href="/news"><h3>Die letzten Neuigkeiten...</h3></a>
       <div class="impressumBox postBox col-xs-12 col-sm-12 col-md-12">
-        <h3>{{post.title}}</h3>
+        <h5>{{post.title}}</h5>
         <div class="impressumContainer">
             <p class="postDate">{{ post.date | date: '%B %d, %Y' }}</p>
             {{post.excerpt}}
         </div>
       </div>
     {% endfor %}
-  </div>
-  <div class="morePro" id="morePro">
-    {% if page.backbutton%}
-    <a href="../index.html">
-      <button type="button" class="btn">Zurück</button>
-    </a>
-    {% endif %}
   </div>
 </section>
